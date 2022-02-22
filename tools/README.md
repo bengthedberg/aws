@@ -15,7 +15,13 @@
   * `dotnet tool install -g Amazon.Lambda.Tools`
   * `dotnet tool install -g Amazon.ECS.Tools`
   * `dotnet tool install -g Amazon.ElasticBeanstalk.Tools`
-  
+
+## Python
+
+* [Python](https://www.python.org/)
+* [Boto3](https://aws.amazon.com/sdk-for-python/)
+* [PowerTools](https://awslabs.github.io/aws-lambda-powertools-python/latest/)
+
 ## Node
 
 * [Install](https://nodejs.org/en/download/)
@@ -41,9 +47,18 @@
   * [C#](https://github.com/OmniSharp/omnisharp-vscode)
 
 
+## Training
+
+* [Workshops](https://workshops.aws/)
+* [Modernization Workshops](https://awsworkshop.io/)
+* [Serverless Workshop](https://github.com/aws-samples/aws-serverless-workshops)
+* [CDK Workshop](https://cdkworkshop.com/)
+
 ## Other
 
+[Serverless Land](https://serverlessland.com/)
 [AWS Documentation](https://docs.aws.amazon.com/index.html)
+
 
 
 
