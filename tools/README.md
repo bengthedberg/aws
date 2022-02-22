@@ -26,6 +26,7 @@
 
 * [Install](https://nodejs.org/en/download/)
 * [Mock Server](https://www.mocks-server.org/)
+* [AWS Javascript SDK](https://aws.amazon.com/sdk-for-javascript/)
 
 ## IDE 
 
