@@ -20,7 +20,7 @@ A good email address might be something like aws-prod@company.com or even someth
    
    Go through the process of [signing up](https://portal.aws.amazon.com/billing/signup) for an AWS account and enter any necessary billing information. 
    
-   Note that if you are using multiple AWS accounts—a very common strategy—make use of [AWS Organizations](https://aws.amazon.com/organizations/) 
+   Note that if you are using multiple AWS accounts—a very common strategy—make use of [AWS Organizations](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_org_create.html) 
 in order to create a hierarchy of accounts that are all linked together. With Organizations, you create 
 one master account and then create child accounts underneath it without having to re-enter billing info. 
 You benefit from consolidated billing, better reserved instance utilization, volume discounts, and policies 
