@@ -1,3 +1,5 @@
+# Create AWS Account
+
 1. **Decide what email address will be used to register for the account**
    
    This seems very basic, but a little forethought can save you a headache down the road. 
