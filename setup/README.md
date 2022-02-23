@@ -89,13 +89,13 @@ on a mobile device, and store it in a safe place such as an office vault.
     
 11. **Turn on AWS Config**
    
-   For each region you use, turn on [AWS Config](https://aws.amazon.com/config/). It will keep an inventory of resources you create and changes made to them. 
+    For each region you use, turn on [AWS Config](https://aws.amazon.com/config/). It will keep an inventory of resources you create and changes made to them. 
    This helps you diagnose problems by finding out what happened when something stops working as expected. It has many other features, 
    but simply turning it on is a good start.
    
 12. **Creating a billing alarm**
 
-   If you need to keep an eye on AWS spend, consider creating a [billing alarm](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/monitor_estimated_charges_with_cloudwatch.html).
+    If you need to keep an eye on AWS spend, consider creating a [billing alarm](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/monitor_estimated_charges_with_cloudwatch.html).
    
 13. **Create the remaining groups and users**
 
@@ -117,5 +117,5 @@ requiring MFA to be used by all users, creating KMS keys for encryption, deployi
 
 16. **Start building!**
 
-   With this initial foundation in place, you should be ready to start building on AWS. With an ever-growing list of services, the sky’s the limit. Enjoy!
+    With this initial foundation in place, you should be ready to start building on AWS. With an ever-growing list of services, the sky’s the limit. Enjoy!
 
