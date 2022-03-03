@@ -45,7 +45,7 @@ on a mobile device, and store it in a safe place such as an office vault.
 
    If required update the TAX settings for the root account, toggle on the inheritence option.   
    
-6. ** Alternative Contacts** 
+6. **Alternative Contacts** 
 
    Add alternative contacts for billing, alerts etc.   
 
