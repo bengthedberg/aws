@@ -10,6 +10,17 @@ AWS Control Tower sets up the multi-account environment, aka. landing zone, with
 
 **Note:** Going forward, we will use the term landing zone exclusively.
 
+Key of Control Tower:
+* With AWS, using multiple AWS Accounts is the best way to create comprehensive security/resource boundaries between teams, i.e., we should think of AWS Accounts as resource containers
+* The AWS Organization master account should only contain resources related to setting up AWS Organizations itself
+* Your AWS Organization should include a Security Organizational Unit (OU) with a Log Archive account aggregating all the logs from all the accounts in the AWS Organization; acting as a single source of truth. It should also have a Security Tooling account to house automated auditing tools
+* Your AWS Organization should include an Infrastructure OU with a Network account to hold shared networking resources, e.g,. shared VPCs
+* Your AWS Organization should include a Sandbox OU to hold individual developer accounts with fixed spending limits to be used for experimentation
+* You AWS Organization should include a Workloads OU to hold accounts that mirror your development life cycle, e.g., Dev, Pre-Prod (aka Staging), and Prod
+* While one can build a properly configured multi-account environment using a number of AWS services centered around AWS Organizations, AWS Control Tower is a no-cost* service that accomplishes this through a managed set of CloudFormation templates tied together with a user interface
+
+***Note:** There is no additional charge to use AWS Control Tower. However, when you set up AWS Control Tower, you will begin to incur costs for AWS services configured to set up your landing zone and mandatory guardrails.
+
 ### Observations:
 
 * The Core OU contains two newly created Member accounts; each with their respective Root users. Comparing this to the recommended landing zone, this Core OU is equivalent to the Security OU with the two recommended accounts
