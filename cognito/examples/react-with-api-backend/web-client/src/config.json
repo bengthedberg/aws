@@ -1,6 +1,7 @@
 {
   "region": "local",
   "userPoolId": "local_1AgkV9U3",
-  "clientId": "abu0j1b6of8repfd5y91grp95",
+  "clientId": "561o5dch0pey4826dwhzrgm33",
+  "clientSecret": "c2st6a0tfqhboi4a6jxl01g3v",
   "endpoint": "http://localhost:9229/"
 }

@@ -14,6 +14,7 @@ import config from "./config.json";
 
 export const cognitoClient = new CognitoIdentityProviderClient({
   region: config.region,
+
   ...(config.endpoint ? { endpoint: config.endpoint } : {}),
 });
 
@@ -24,6 +25,11 @@ export const signIn = async (username: string, password: string) => {
     AuthParameters: {
       USERNAME: username,
       PASSWORD: password,
+      ...(config.clientSecret
+        ? {
+            SECRET_HASH: btoa(username + config.clientId + config.clientSecret),
+          }
+        : {}),
     },
   };
   try {
@@ -58,6 +64,11 @@ export const signUp = async (email: string, password: string) => {
         Value: email,
       },
     ],
+    ...(config.clientSecret
+      ? {
+          SecretHash: btoa(email + config.clientId + config.clientSecret),
+        }
+      : {}),
   };
   try {
     const command = new SignUpCommand(params);
@@ -75,6 +86,11 @@ export const confirmSignUp = async (username: string, code: string) => {
     ClientId: config.clientId,
     Username: username,
     ConfirmationCode: code,
+    ...(config.clientSecret
+      ? {
+          SecretHash: btoa(username + config.clientId + config.clientSecret),
+        }
+      : {}),
   };
   try {
     const command = new ConfirmSignUpCommand(params);

@@ -1,0 +1,35 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "cognito", "cognito", "{6C6C89E4-25CB-1648-7609-F7F4FBC516CF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "examples", "examples", "{688DE978-BDFC-04F4-442F-9666874FB15B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "react-with-api-backend", "react-with-api-backend", "{E2BE4CC3-F5DE-FFFF-5C20-8B463B2EB767}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "back-end", "cognito\examples\react-with-api-backend\back-end\back-end.csproj", "{1CF9E7AB-8005-FF2F-6865-1AB810A10EDD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1CF9E7AB-8005-FF2F-6865-1AB810A10EDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CF9E7AB-8005-FF2F-6865-1AB810A10EDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CF9E7AB-8005-FF2F-6865-1AB810A10EDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CF9E7AB-8005-FF2F-6865-1AB810A10EDD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{688DE978-BDFC-04F4-442F-9666874FB15B} = {6C6C89E4-25CB-1648-7609-F7F4FBC516CF}
+		{E2BE4CC3-F5DE-FFFF-5C20-8B463B2EB767} = {688DE978-BDFC-04F4-442F-9666874FB15B}
+		{1CF9E7AB-8005-FF2F-6865-1AB810A10EDD} = {E2BE4CC3-F5DE-FFFF-5C20-8B463B2EB767}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9C2C9785-72FF-4F7D-A0B3-CEA1DB62D3DB}
+	EndGlobalSection
+EndGlobal

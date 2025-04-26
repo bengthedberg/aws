@@ -452,3 +452,5 @@ Update the configuration values accordingly:
 ```
 
 Run and Test :)
+
+[doc](https://docs.aws.amazon.com/cognito/latest/developerguide/token-endpoint.html)
