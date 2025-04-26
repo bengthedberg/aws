@@ -1,0 +1,17 @@
+version: "3.8"
+services:
+  cognito-local:
+    image: jagregory/cognito-local:latest
+    ports:
+      - "9229:9229" # Expose the debug port
+    volumes:
+      - cognito-data:/app/.cognito # Mount the .cognito volume
+    environment: # You can add environment variables here if needed.
+      - CODE=ABC123
+    # networks: #Define networks
+    #   - your_network_name
+#networks: #Define networks
+#  your_network_name:
+#    driver: bridge
+volumes:
+  cognito-data:
